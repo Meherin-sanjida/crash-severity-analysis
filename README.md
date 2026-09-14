@@ -26,3 +26,9 @@ pip install -r requirements.txt
 - Pandas
 - Matplotlib
 - SciPy
+- 
+## Milestone 1
+The initial project repository has been established.
+
+## Next Step
+The next step is to organize the crash and roadway datasets. 
