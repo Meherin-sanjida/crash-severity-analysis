@@ -33,8 +33,11 @@ The initial project repository has been established.
 ## Milestone 2 Prototype
 
 -Install project dependencies: pip install -r requirements.txt
+
 -Run python src/prototype.py
+
 -Run automated tests: pytest
+
 -Run code qality checks: ruff'
 
 
