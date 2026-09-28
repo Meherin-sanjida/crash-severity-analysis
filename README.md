@@ -30,5 +30,16 @@ pip install -r requirements.txt
 ## Milestone 1
 The initial project repository has been established.
 
-## Next Step
-The next step is to organize the crash and roadway datasets. 
+## Milestone 2 Prototype
+
+-Install project dependencies:
+
+```bash
+pip install -r requirements.txt 
+
+-run python src/prototype.py
+-run automated tests: pytest
+-run code qality checks: ruff
+
+
+
