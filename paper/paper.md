@@ -33,12 +33,12 @@ Summarize the current or expected impact of the software. This can include repro
 Use this section to draft short reflections from each in-class activity. These notes can later be refined into the final report and should connect the course activities to your project.
 
 ## Modeling Intro
+The modeling intro activities helped me understand the basic workflow of building and interpreting models. Also I am using Github for the first time and I think it is very useful. My project will follow similar modeling practices. 
 
-Draft a short reflection on what you learned in the modeling intro activities, which tools or techniques were most useful, how the work relates to your project, and whether you plan to adopt any of the ideas.
 
 ## Analytical Modeling
 
-Draft a short reflection on what you learned in the analytical modeling activities, which methods or tools were most useful, how the work relates to your project, and whether you plan to adopt any of the ideas.
+The analytical modeling activities helped me learn how to visualize and analyze data with Pandas, NumPy, Matplotlib. Learning about StackGP was also helpful. I may not use StackGP in the class project but I may need to use it in my research to initaially identify the data patterns. 
 
 ## Physical Modeling
 
