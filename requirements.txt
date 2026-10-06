@@ -3,6 +3,6 @@ pandas
 matplotlib
 scipy
 scikit-learn
-jupyter
+jupyterlab
 pytest
-ruffpip install 
+ruff

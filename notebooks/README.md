@@ -1,2 +1,1 @@
-Jupyter notebooks for interactive data exploration and analysis.
-Example: data_analysis.ipynb
+The Initial_prototype notebook will show an initial workflow that includes reading the CSV file and describing some of the variables in the dataset. This notebook confirms the workflow. The main analysis code will be provided in the next project milestone. 
