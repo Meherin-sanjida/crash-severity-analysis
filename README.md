@@ -32,11 +32,11 @@ The initial project repository has been established.
 
 ## Milestone 2 Prototype
 
+This prototype shows the workflow and verifies that the code works. It loads the dataset and loads some of the fields in the data and describes some variables. 
+
 -Install project dependencies: pip install -r requirements.txt
 
 -Run python src/prototype.py
-
--Run automated tests: pytest
 
 -Run code qality checks: ruff'
 
