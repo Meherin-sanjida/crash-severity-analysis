@@ -6,8 +6,8 @@ help:
 	@echo make check - Run validation checks
 
 test:
-	python -m pytest -v test_validation.py
+	set PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 && python -m pytest -v test_validation.py
 
 check:
-	python -m pytest -v test_validation.py
+	set PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 && python -m pytest -v test_validation.py
 	python -m compileall -q test_validation.py
