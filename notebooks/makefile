@@ -1,15 +1,13 @@
-.PHONY: help init test check
+
+.PHONY: help test check
 
 help:
-	@echo "init  - Create the Conda environment"
-	@echo "test  - Run the tests"
-	@echo "check - Show detailed test results"
-
-init:
-	conda env create -f environment.yml
+	@echo make test - Run automated tests
+	@echo make check - Run validation checks
 
 test:
-	python -m pytest
+	python -m pytest -v test_validation.py
 
 check:
-	python -m pytest -v
+	python -m pytest -v test_validation.py
+	python -m compileall -q test_validation.py
