@@ -69,6 +69,7 @@ The "02_testing_validation" notebook will show some automated tests implemented 
 From the repository root directory, activate the Conda environment and run:
 
 conda activate cmse802
+
 make test
 
 The Makefile disables automatic loading of third-party pytest plugins to avoid an environment-specific plugin compatibility issue.
@@ -76,6 +77,7 @@ The Makefile disables automatic loading of third-party pytest plugins to avoid a
 Alternatively, on Windows Anaconda Prompt, run:
 
 set PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+
 python -m pytest -v test_validation.py
 
 ### Run validation checks
