@@ -19,39 +19,29 @@ The project environment is defined in environment.yml.
 
 Create the Conda environment from the repository root:
 
-'''bash
 conda env create -f environment.yml
-'''
+
 Activate the environment:
 
-'''bash
 conda activate cmse802
-'''
 
 Then start JupyterLab:
 
-'''bash
 jupyter lab
-'''
 
 ## **Testing and Validation**
 Before running pytest, make sure the cmse802 environment is activated. Run this command from the repository root: 
 
-'''bash
 conda activate cmse802
-'''
 
 Run the tests using either command:
 
-'''bash
-python -m pytest
-'''
+python -m pytes
 
 or
 
-'''bash
 make test
-'''
+
 Expected result: 9 tests passed. 
 
 ## Milestone 1
@@ -67,5 +57,36 @@ The "01_initial_prototype" notebook will show an initial workflow to describe th
 
 ## Milestone 3 
 
+The "02_testing_validation" notebook will show some automated tests implemented in "test_validation" python file. The tests evaluate data validation and processing functions, including: 
+1. Verification of required dataset columns
+2. Retention of valid observations and exclusion of invalid observations.
+3. Removal of unnecessary whitespace.
+4. Calculation of crash severity frequencies.
+5. Generation of cross-tabulations and summary totals.
+6. Handling of datasets with no valid observations.
 
+### Run automated tests 
+From the repository root directory, activate the Conda environment and run:
 
+conda activate cmse802
+make test
+
+The Makefile disables automatic loading of third-party pytest plugins to avoid an environment-specific plugin compatibility issue.
+
+Alternatively, on Windows Anaconda Prompt, run:
+
+set PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+python -m pytest -v test_validation.py
+
+### Run validation checks
+make check
+
+This command executes the automated tests and checks that test_validation.py compiles successfully.
+
+### View Available Make Commands
+make help
+
+Expected result: 9 tests passed. 
+
+### Limitations: 
+The current makefile uses Windows Command Prompt syntax to disable automatic pytest plugin loading. Users on other operating systems may need to adjust this command.
