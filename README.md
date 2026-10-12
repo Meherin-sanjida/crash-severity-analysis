@@ -15,29 +15,57 @@ The project aim to analyze how roadway geometric and traffic characteristics are
 - Results interpretation and recommendation development 
 
 ## **Installation and Setup**
-1. **Clone this repository:**
-- Opening the terminal; 
- cd git clone https://github.com/Meherin-sanjida/crash-severity-analysis
+The project environment is defined in environment.yml.
 
-2. **Install required dependencies:**
-pip install -r requirements.txt
-- Python 3.x
-- NumPy
-- Pandas
-- Matplotlib
-- SciPy
-- 
+Create the Conda environment from the repository root:
+
+'''bash
+conda env create -f environment.yml
+'''
+Activate the environment:
+
+'''bash
+conda activate cmse802
+'''
+
+Then start JupyterLab:
+
+'''bash
+jupyter lab
+'''
+
+## **Testing and Validation**
+Before running pytest, make sure the cmse802 environment is activated. Run this command from the repository root: 
+
+'''bash
+conda activate cmse802
+'''
+
+Run the tests using either command:
+
+'''bash
+python -m pytest
+'''
+
+or
+
+'''bash
+make test
+'''
+Expected result: 9 tests passed. 
+
 ## Milestone 1
 The initial project repository has been established.
 
-## Milestone 2 Prototype
+## Milestone 2
 
-This prototype shows the workflow and verifies that the code works. It loads the dataset and loads some of the fields in the data and describes some variables. 
+The "01_initial_prototype" notebook will show an initial workflow to describe the variables in the crash severity analysis. The main outcomes are- 
+1. Loads a CSV database that contains the variables regarding roadway geometric and traffic characteristics of intersections and crash severity outcomes.  
+2. Creates a bar chart showing how many right-turning crashes fall into each crash severity category.
+3. Shows the variable categories for "speed limit" of roadways.
+4. Creates a bar chart showing the crash severity outcomes by roadway speed limit.
 
--Install project dependencies: pip install -r requirements.txt
+## Milestone 3 
 
--Run python src/prototype.py
-
--Run code qality checks: ruff'
 
 

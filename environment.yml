@@ -3,4 +3,12 @@ channels:
   - defaults
 dependencies:
   - python=3.11
+  - numpy
+  - pandas
+  - matplotlib
+  - scipy
+  - scikit-learn
+  - jupyterlab
+  - pytest
+  - ruff
 prefix: C:\Users\meherins\AppData\Local\anaconda3\envs\cmse802
